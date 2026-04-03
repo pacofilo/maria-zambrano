@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>María Zambrano y la razón poética — Historia de la Filosofía · IES Alquipir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=RBFYzNSRbi2l9lZGdCbeKokWzhCGC6DJPBKQ91um6S-WzVl81PS_mLeej2R-CVdPOgJ7cZTRhEQ4gXXLG3t9iazD5gAg6B6-sAXRtsT3ZskSZER9oaVV3OcR_0c5bdXnRf8MA8wBl37Qku95ZL1dmfNE_0s01q6d1fsHMlwRl1v8a55eZi3_R-O3oaVsOWzcirJEhQRztvZkMPOwgFhlnXu1-Ge2wG737XHFNBtgU57BmGONedD1sgb23ltrjkofUOzVoKzce2mV2oWqoM4YUA" charset="UTF-8"></script><style>
+    :root {
+      --bg-primary: #FAF9F5;
+      --bg-secondary: #F0EDE6;
+      --bg-card: #FFFFFF;
+      --text-primary: #2D2B28;
+      --text-secondary: #6B6560;
+      --text-tertiary: #9B9590;
+      --accent: #D97757;
+      --accent-hover: #C4603F;
+      --accent-light: rgba(217, 119, 87, 0.08);
+      --accent-light-hover: rgba(217, 119, 87, 0.14);
+      --blue-accent: #3B82B6;
+      --blue-light: rgba(59, 130, 182, 0.08);
+      --green-accent: #4A9D6E;
+      --green-light: rgba(74, 157, 110, 0.08);
+      --purple-accent: #7C5CBF;
+      --purple-light: rgba(124, 92, 191, 0.08);
+      --gold-accent: #B8860B;
+      --gold-light: rgba(184, 134, 11, 0.06);
+      --border: rgba(0, 0, 0, 0.06);
+      --border-hover: rgba(0, 0, 0, 0.12);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 2px 8px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-lg: 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-xl: 0 8px 32px rgba(0,0,0,0.10), 0 4px 8px rgba(0,0,0,0.06);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --radius-lg: 16px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.75;
+      min-height: 100vh;
+      font-size: 19px;
+    }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250, 249, 245, 0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .topbar-left { display: flex; align-items: center; gap: 12px; }
+    .topbar-logo { font-family: 'Instrument Serif', serif; font-size: 20px; color: var(--accent); letter-spacing: -0.5px; }
+    .topbar-divider { width: 1px; height: 20px; background: var(--border-hover); }
+    .topbar-section { font-size: 14px; color: var(--text-secondary); font-weight: 500; }
+    .btn-home {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; background: var(--accent); color: #fff; border: none;
+      border-radius: var(--radius-sm); font-family: inherit; font-size: 13px; font-weight: 600;
+      cursor: pointer; text-decoration: none; transition: background 0.2s, transform 0.15s;
+    }
+    .btn-home:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-home svg { width: 16px; height: 16px; }
+
+    .hero { max-width: 1200px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
+    .hero-overline {
+      display: inline-block; font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2.5px; color: var(--accent); margin-bottom: 16px; padding: 6px 14px;
+      background: var(--accent-light); border-radius: 20px;
+    }
+    .hero h1 {
+      font-family: 'Instrument Serif', serif; font-size: clamp(32px, 5.5vw, 52px);
+      font-weight: 400; line-height: 1.15; color: var(--text-primary);
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .hero h1 em { font-style: italic; color: var(--accent); }
+    .hero-subtitle {
+      font-size: 20px; color: var(--text-secondary); max-width: 850px;
+      margin: 0 auto 28px; line-height: 1.6;
+    }
+    .hero-meta {
+      display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+      font-size: 13px; color: var(--text-tertiary);
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+    .intro-quote {
+      max-width: 1200px; margin: 0 auto 48px; padding: 28px 32px; background: var(--gold-light);
+      border-left: 4px solid var(--gold-accent); border-radius: 0 var(--radius) var(--radius) 0;
+      font-family: 'Instrument Serif', serif; font-size: 22px; font-style: italic;
+      color: var(--text-primary); line-height: 1.6;
+    }
+    .intro-quote cite {
+      display: block; font-family: 'DM Sans', sans-serif; font-style: normal; font-size: 14px;
+      color: var(--text-tertiary); margin-top: 12px; font-weight: 500;
+    }
+
+    .content { max-width: 1200px; margin: 0 auto; padding: 0 24px 48px; }
+    .section-block { margin-bottom: 48px; }
+    .section-block-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .section-number {
+      font-family: 'Instrument Serif', serif; font-size: 32px; color: var(--accent);
+      opacity: 0.5; line-height: 1; min-width: 32px;
+    }
+    .section-label h2 {
+      font-family: 'Instrument Serif', serif; font-size: 28px; font-weight: 400;
+      color: var(--text-primary); line-height: 1.2;
+    }
+    .section-label .overline {
+      font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px; color: var(--accent);
+    }
+    .text-content { font-size: 19px; color: var(--text-primary); line-height: 1.8; }
+    .text-content p { margin-bottom: 16px; }
+    .text-content strong { color: var(--text-primary); font-weight: 600; }
+
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px; margin-bottom: 48px;
+    }
+    .card-btn {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px; cursor: pointer; text-align: left; transition: all 0.25s ease;
+      display: flex; flex-direction: column; gap: 8px; position: relative; overflow: hidden;
+      font-family: inherit;
+    }
+    .card-btn:hover { border-color: var(--border-hover); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .card-icon { font-size: 28px; margin-bottom: 4px; }
+    .card-title { font-family: 'Instrument Serif', serif; font-size: 20px; color: var(--text-primary); line-height: 1.3; }
+    .card-desc { font-size: 16px; color: var(--text-secondary); line-height: 1.5; }
+    .card-arrow { position: absolute; top: 20px; right: 20px; font-size: 18px; color: var(--accent); transition: transform 0.2s; }
+    .card-btn:hover .card-arrow { transform: translateX(3px); }
+    .card-btn.blue { border-left: 3px solid var(--blue-accent); }
+    .card-btn.blue:hover { background: var(--blue-light); }
+    .card-btn.green { border-left: 3px solid var(--green-accent); }
+    .card-btn.green:hover { background: var(--green-light); }
+    .card-btn.purple { border-left: 3px solid var(--purple-accent); }
+    .card-btn.purple:hover { background: var(--purple-light); }
+    .card-btn.gold { border-left: 3px solid var(--gold-accent); }
+    .card-btn.gold:hover { background: var(--gold-light); }
+    .card-btn.accent { border-left: 3px solid var(--accent); }
+    .card-btn.accent:hover { background: var(--accent-light); }
+
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 500; background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); justify-content: center;
+      align-items: center; padding: 24px; opacity: 0; transition: opacity 0.3s ease;
+    }
+    .modal-overlay.active { display: flex; opacity: 1; }
+    .modal-box {
+      background: var(--bg-primary); border-radius: var(--radius-lg); max-width: 920px; width: 100%;
+      max-height: 85vh; overflow-y: auto; box-shadow: var(--shadow-xl); position: relative;
+      transition: all 0.3s ease;
+    }
+    .modal-box.fullscreen { max-width: 100%; max-height: 100%; height: 100vh; border-radius: 0; }
+    .modal-topbar {
+      position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px; background: rgba(250, 249, 245, 0.95); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-topbar-title { font-family: 'Instrument Serif', serif; font-size: 18px; color: var(--text-primary); }
+    .modal-topbar-actions { display: flex; gap: 8px; }
+    .btn-modal-action {
+      display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px;
+      border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-card);
+      color: var(--text-secondary); cursor: pointer; transition: all 0.2s; font-family: inherit;
+    }
+    .btn-modal-action:hover { border-color: var(--border-hover); color: var(--text-primary); background: var(--bg-secondary); }
+    .btn-modal-action svg { width: 18px; height: 18px; }
+    .modal-content { padding: 32px; }
+    .modal-content h3, .page-content h2 {
+      font-family: 'Instrument Serif', serif; font-size: 34px; font-weight: 400; margin-bottom: 20px;
+      color: var(--text-primary); line-height: 1.2;
+    }
+    .modal-content h4, .page-content h4 { font-size: 19px; font-weight: 600; margin: 24px 0 10px; color: var(--text-primary); }
+    .modal-content p, .page-content p { margin-bottom: 14px; font-size: 19px; line-height: 1.8; color: var(--text-primary); }
+    .modal-content ul, .modal-content ol, .page-content ul, .page-content ol { margin: 10px 0 18px 20px; font-size: 19px; line-height: 1.8; }
+    .modal-content li, .page-content li { margin-bottom: 6px; }
+    .highlight-box, .page-content .highlight-box {
+      background: var(--accent-light); border-left: 3px solid var(--accent); padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin: 18px 0; font-size: 18px;
+    }
+    .quote-box, .page-content .quote-box {
+      background: var(--gold-light); border-left: 3px solid var(--gold-accent); padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin: 18px 0;
+      font-family: 'Instrument Serif', serif; font-style: italic; font-size: 20px; line-height: 1.6;
+    }
+    .quote-box cite, .page-content .quote-box cite {
+      display: block; font-family: 'DM Sans', sans-serif; font-style: normal; font-size: 14px;
+      color: var(--text-tertiary); margin-top: 8px;
+    }
+    .concept-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 16px 0 20px;
+    }
+    .concept-item {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px;
+    }
+    .concept-item strong { display: block; font-size: 17px; margin-bottom: 4px; color: var(--accent); }
+    .concept-item span { font-size: 16px; color: var(--text-secondary); line-height: 1.6; }
+
+    .page-overlay {
+      display: none; position: fixed; inset: 0; z-index: 400; background: var(--bg-primary); overflow-y: auto;
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    .page-overlay.active { display: block; opacity: 1; }
+    .page-topbar {
+      position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 24px; background: rgba(250, 249, 245, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+    }
+    .page-topbar-left { display: flex; align-items: center; gap: 12px; }
+    .btn-back {
+      display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; background: var(--bg-card);
+      border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: inherit; font-size: 13px;
+      font-weight: 500; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-decoration: none;
+    }
+    .btn-back:hover { border-color: var(--border-hover); color: var(--text-primary); background: var(--bg-secondary); }
+    .btn-back svg { width: 16px; height: 16px; }
+    .page-content { max-width: 1000px; margin: 0 auto; padding: 40px 24px 60px; }
+    .page-content h3 {
+      font-family: 'Instrument Serif', serif; font-size: 26px; font-weight: 400; margin: 32px 0 14px; color: var(--text-primary);
+    }
+
+    .divider { max-width: 1200px; margin: 0 auto 40px; padding: 0 24px; }
+    .divider-line { border: none; border-top: 1px solid var(--border); }
+    .footer {
+      text-align: center; padding: 32px 24px 40px; font-size: 13px; color: var(--text-tertiary); border-top: 1px solid var(--border);
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    .footer-phi { font-family: 'Instrument Serif', serif; font-size: 28px; color: var(--accent); opacity: 0.35; margin-bottom: 8px; }
+
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 640px) {
+      body { font-size: 17px; }
+      .hero { padding: 40px 16px 32px; }
+      .hero h1 { font-size: 28px; }
+      .content { padding: 0 16px 40px; }
+      .modal-content { padding: 24px 18px; }
+      .modal-content p, .modal-content ul, .modal-content ol, .page-content p, .page-content ul, .page-content ol { font-size: 17px; }
+      .page-content { padding: 28px 16px 48px; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .topbar { padding: 10px 16px; }
+      .topbar-section { display: none; }
+    }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="topbar-logo">φ</span>
+    <div class="topbar-divider"></div>
+    <span class="topbar-section">Historia de la Filosofía · 2º Bachillerato</span>
+  </div>
+  <a class="btn-home" href="https://pacofilo.github.io/filoalquipir/" target="_blank">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Página principal
+  </a>
+</header>
+
+<section class="hero">
+  <span class="hero-overline">Siglo XX · Filosofía española contemporánea</span>
+  <h1>María Zambrano y la<br><em>razón poética</em></h1>
+  <p class="hero-subtitle">Una aproximación amplia a una de las aportaciones más originales de la filosofía española del siglo XX: una razón que no renuncia al pensamiento, pero que se abre también a la poesía, al alma, al sueño, a la historia y a lo divino.</p>
+  <div class="hero-meta">
+    <span>📚 Historia de la Filosofía</span>
+    <span>🎓 2º Bachillerato</span>
+    <span>🏫 IES Alquipir · Cehegín</span>
+  </div>
+</section>
+
+<div class="intro-quote reveal">
+  «La verdad no es aletheia solamente; es también revelación graciosa y gratuita.»
+  <cite>— María Zambrano, en el horizonte de su idea de razón poética</cite>
+</div>
+
+<div class="content">
+  <div class="section-block reveal">
+    <div class="section-block-header">
+      <div class="section-number">01</div>
+      <div class="section-label">
+        <span class="overline">Introducción y contexto</span>
+        <h2>Una filósofa del exilio, la interioridad y la revelación</h2>
+      </div>
+    </div>
+    <div class="text-content">
+      <p>María Zambrano es una de las pensadoras más originales de la filosofía española del siglo XX. Discípula de Ortega y Gasset, parte de la razón vital de su maestro, pero pronto elabora un camino propio en el que la filosofía se abre a la poesía, al símbolo, a la experiencia histórica, al alma humana y a lo sagrado.</p>
+      <p>Su pensamiento nace del cruce entre reflexión filosófica y experiencia vital: la Guerra Civil, el exilio, la crisis de Europa, el desarraigo del ser humano moderno y la necesidad de encontrar una forma de conocimiento más amplia que la razón puramente discursiva.</p>
+      <p>Pulsa en las tarjetas para recorrer los contenidos principales.</p>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+    <button class="card-btn blue reveal" onclick="openModal('modal-biografia')">
+      <span class="card-icon">🌍</span>
+      <span class="card-title">Biografía y contexto</span>
+      <span class="card-desc">La vida de Zambrano, el exilio y la crisis histórica que marca su pensamiento.</span>
+      <span class="card-arrow">→</span>
+    </button>
+    <button class="card-btn green reveal" onclick="openModal('modal-definicion')">
+      <span class="card-icon">💡</span>
+      <span class="card-title">Qué es la razón poética</span>
+      <span class="card-desc">Una razón más ancha que une logos, sentimiento, intuición, símbolo y revelación.</span>
+      <span class="card-arrow">→</span>
+    </button>
+    <button class="card-btn purple reveal" onclick="openModal('modal-rasgos')">
+      <span class="card-icon">🪞</span>
+      <span class="card-title">Rasgos fundamentales</span>
+      <span class="card-desc">Carácter mediador, revelador, no sistemático, poético y humanizador.</span>
+      <span class="card-arrow">→</span>
+    </button>
+  </div>
+
+  <div class="section-block reveal">
+    <div class="section-block-header">
+      <div class="section-number">02</div>
+      <div class="section-label">
+        <span class="overline">Influencias, obras y desarrollo</span>
+        <h2>Del raciovitalismo a una filosofía propia</h2>
+      </div>
+    </div>
+    <div class="text-content">
+      <p>La razón poética no surge de la nada. Parte de Ortega y Gasset, dialoga con la tradición filosófica occidental, y madura en una serie de obras que van desde los años treinta hasta la plena madurez de Zambrano.</p>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+    <button class="card-btn accent reveal" onclick="openPage('page-ortega')">
+      <span class="card-icon">🧠</span>
+      <span class="card-title">Ortega y Gasset</span>
+      <span class="card-desc">La razón vital como punto de partida y la posterior superación zambraniana.</span>
+      <span class="card-arrow">→</span>
+    </button>
+    <button class="card-btn gold reveal" onclick="openPage('page-obras')">
+      <span class="card-icon">📚</span>
+      <span class="card-title">Obras principales</span>
+      <span class="card-desc">Desde Hacia un saber sobre el alma hasta Claros del bosque y El hombre y lo divino.</span>
+      <span class="card-arrow">→</span>
+    </button>
+    <button class="card-btn blue reveal" onclick="openPage('page-aplicaciones')">
+      <span class="card-icon">✨</span>
+      <span class="card-title">Exilio, sueños y lo divino</span>
+      <span class="card-desc">Cómo se aplica la razón poética a tres núcleos decisivos de su pensamiento.</span>
+      <span class="card-arrow">→</span>
+    </button>
+    <button class="card-btn green reveal" onclick="openModal('modal-actualidad')">
+      <span class="card-icon">🏛️</span>
+      <span class="card-title">Actualidad y valor</span>
+      <span class="card-desc">Por qué Zambrano sigue siendo una autora imprescindible para pensar nuestro tiempo.</span>
+      <span class="card-arrow">→</span>
+    </button>
+  </div>
+
+  <div class="section-block reveal">
+    <div class="section-block-header">
+      <div class="section-number">03</div>
+      <div class="section-label">
+        <span class="overline">Repaso final</span>
+        <h2>Conceptos y preguntas de reflexión</h2>
+      </div>
+    </div>
+    <div class="text-content">
+      <p>Antes de cerrar el tema, conviene fijar algunos conceptos básicos y plantear algunas cuestiones que ayuden a pensar la originalidad de Zambrano.</p>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+    <button class="card-btn purple reveal" onclick="openModal('modal-conceptos')">
+      <span class="card-icon">📖</span>
+      <span class="card-title">Glosario esencial</span>
+      <span class="card-desc">Razón poética, revelación, alma, exilio, claro del bosque, piedad, entrañas.</span>
+      <span class="card-arrow">→</span>
+    </button>
+    <button class="card-btn accent reveal" onclick="openModal('modal-preguntas')">
+      <span class="card-icon">❓</span>
+      <span class="card-title">Preguntas para pensar</span>
+      <span class="card-desc">Cuestiones filosóficas para comentar en clase, escribir o debatir.</span>
+      <span class="card-arrow">→</span>
+    </button>
+  </div>
+</div>
+
+<div class="divider"><hr class="divider-line"></div>
+<footer class="footer">
+  <div class="footer-phi">φ</div>
+  <p>Departamento de Filosofía · <a href="https://pacofilo.github.io/filoalquipir/" target="_blank">IES Alquipir</a> · Cehegín, Murcia<br>Francisco Jiménez Amor</p>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-biografia">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <span class="modal-topbar-title">Biografía y contexto</span>
+      <div class="modal-topbar-actions">
+        <button class="btn-modal-action" onclick="toggleFullscreen(this)" title="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+        <button class="btn-modal-action" onclick="closeModal('modal-biografia')" title="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="modal-content">
+      <h3>Una vida atravesada por la historia</h3>
+      <p>María Zambrano nació en 1904 y murió en 1991. Su vida quedó profundamente marcada por la historia del siglo XX: la crisis europea, la Segunda República, la Guerra Civil española y un larguísimo exilio que la llevó por diversos países y del que solo regresó ya en la etapa final de su vida.</p>
+      <p>Ese exilio no fue solo una circunstancia biográfica. Se convirtió en una experiencia filosófica decisiva. El desarraigo, la pérdida de la patria, la ruptura con el propio mundo y la necesidad de rehacerse interiormente atraviesan su obra entera.</p>
+      <p>Por eso su filosofía no nace en el laboratorio abstracto del concepto puro, sino en contacto con la historia, el sufrimiento, la memoria y la esperanza. Zambrano piensa desde una herida histórica, pero no se limita a describirla: busca un modo de conocimiento que permita orientarse en ella.</p>
+      <div class="highlight-box"><strong>Idea clave:</strong> en Zambrano la filosofía es inseparable de la vida, de la historia y de la experiencia interior.</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-definicion">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <span class="modal-topbar-title">Qué es la razón poética</span>
+      <div class="modal-topbar-actions">
+        <button class="btn-modal-action" onclick="toggleFullscreen(this)" title="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+        <button class="btn-modal-action" onclick="closeModal('modal-definicion')" title="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="modal-content">
+      <h3>Una ampliación de la razón</h3>
+      <p>La razón poética no es una negación de la razón, sino su ampliación. Zambrano considera que la filosofía occidental ha privilegiado una razón discursiva, lógica y demostrativa, útil para definir y clasificar, pero insuficiente para captar las zonas más hondas de la existencia.</p>
+      <p>Frente a ello, propone una razón más ancha, capaz de integrar pensamiento y sentimiento, inteligencia e intuición, filosofía y poesía, claridad conceptual y revelación simbólica.</p>
+      <p>La verdad, para esta razón, no se impone como conquista violenta ni se reduce a una demostración. Más bien acontece como desvelamiento, encuentro, aparición, revelación de algo que no se deja poseer del todo.</p>
+      <div class="quote-box">La razón poética intenta decir lo que la lógica sola no alcanza: el alma, el sueño, el padecimiento, la esperanza, lo divino, la intimidad del ser humano.<cite>— Sentido general del pensamiento de Zambrano</cite></div>
+      <div class="highlight-box"><strong>En resumen:</strong> la razón poética es una forma de conocimiento mediadora, reveladora y humanizadora.</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-rasgos">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <span class="modal-topbar-title">Rasgos fundamentales</span>
+      <div class="modal-topbar-actions">
+        <button class="btn-modal-action" onclick="toggleFullscreen(this)" title="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+        <button class="btn-modal-action" onclick="closeModal('modal-rasgos')" title="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="modal-content">
+      <h3>Los rasgos esenciales de la razón poética</h3>
+      <div class="concept-grid">
+        <div class="concept-item"><strong>No sistemática</strong><span>No funciona como un sistema deductivo cerrado. Su pensamiento avanza por aproximaciones, imágenes, intuiciones y revelaciones.</span></div>
+        <div class="concept-item"><strong>Poética</strong><span>La poesía no es un adorno, sino el lenguaje adecuado para manifestar ciertas verdades que el concepto rígido no alcanza.</span></div>
+        <div class="concept-item"><strong>Reveladora</strong><span>No conquista la verdad como posesión, sino que se dispone a recibirla cuando esta se manifiesta.</span></div>
+        <div class="concept-item"><strong>Mediadora</strong><span>Une filosofía y vida, razón y alma, historia e intimidad, pensamiento y piedad.</span></div>
+        <div class="concept-item"><strong>Humanizadora</strong><span>Busca un saber más misericordioso, menos violento y más fiel a la complejidad de la persona.</span></div>
+        <div class="concept-item"><strong>Abierta al misterio</strong><span>No clausura la realidad en definiciones exhaustivas; deja espacio a lo sagrado, al símbolo y al silencio.</span></div>
+      </div>
+      <div class="highlight-box"><strong>Clave interpretativa:</strong> Zambrano no quiere menos razón, sino una razón más fiel a la vida humana real.</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-actualidad">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <span class="modal-topbar-title">Actualidad y valor</span>
+      <div class="modal-topbar-actions">
+        <button class="btn-modal-action" onclick="toggleFullscreen(this)" title="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+        <button class="btn-modal-action" onclick="closeModal('modal-actualidad')" title="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="modal-content">
+      <h3>Por qué Zambrano sigue siendo actual</h3>
+      <p>La obra de María Zambrano sigue teniendo fuerza hoy porque cuestiona una concepción estrecha de la racionalidad. En un mundo dominado por la técnica, la prisa, el cálculo y la reducción de la experiencia a información, su pensamiento recuerda que la vida humana no cabe por entero en la lógica instrumental.</p>
+      <p>Su filosofía ofrece una salida al desarraigo moderno: invita a pensar con más hondura, a escuchar lo que sentimos antes de poder formularlo, a reconocer el valor del símbolo, del sueño, de la memoria y de la interioridad.</p>
+      <p>Además, su pensamiento propone un nuevo humanismo, más compasivo y menos dominador, capaz de unir lucidez y piedad, razón y misericordia, historia y alma.</p>
+      <div class="quote-box">Pensar, en Zambrano, no es solo definir, sino también descifrar lo que se siente.<cite>— Fórmula sintética para comprender su propuesta</cite></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-conceptos">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <span class="modal-topbar-title">Glosario esencial</span>
+      <div class="modal-topbar-actions">
+        <button class="btn-modal-action" onclick="toggleFullscreen(this)" title="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+        <button class="btn-modal-action" onclick="closeModal('modal-conceptos')" title="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="modal-content">
+      <h3>Conceptos fundamentales en María Zambrano</h3>
+      <div class="concept-grid">
+        <div class="concept-item"><strong>Razón poética</strong><span>Modo de conocimiento que amplía la razón discursiva y la abre a la poesía, la interioridad, el símbolo y la revelación.</span></div>
+        <div class="concept-item"><strong>Razón vital</strong><span>Punto de partida heredado de Ortega: la razón debe partir de la vida concreta y de la circunstancia.</span></div>
+        <div class="concept-item"><strong>Alma</strong><span>Ámbito interior de la persona que no puede reducirse a un objeto lógico ni a mera psicología.</span></div>
+        <div class="concept-item"><strong>Revelación</strong><span>Forma de aparición de la verdad que no se impone como conquista, sino como encuentro o don.</span></div>
+        <div class="concept-item"><strong>Exilio</strong><span>Desarraigo histórico y también experiencia ontológica del ser humano separado de sí mismo y de su mundo.</span></div>
+        <div class="concept-item"><strong>Sueño</strong><span>Espacio privilegiado de revelación de verdades que la conciencia diurna suele dejar ocultas.</span></div>
+        <div class="concept-item"><strong>Lo divino</strong><span>Presencia de la trascendencia que no se reduce a sistema dogmático, sino que se experimenta simbólicamente.</span></div>
+        <div class="concept-item"><strong>Claro del bosque</strong><span>Metáfora de un espacio de iluminación en medio de la espesura, donde la verdad comparece sin quedar agotada.</span></div>
+        <div class="concept-item"><strong>Piedad</strong><span>Disposición de acogida y respeto hacia la realidad, opuesta a una razón violenta que solo pretende dominarla.</span></div>
+        <div class="concept-item"><strong>Entrañas</strong><span>Profundidad afectiva y originaria del ser humano, previa a la elaboración conceptual.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-preguntas">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <span class="modal-topbar-title">Preguntas para pensar</span>
+      <div class="modal-topbar-actions">
+        <button class="btn-modal-action" onclick="toggleFullscreen(this)" title="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+        <button class="btn-modal-action" onclick="closeModal('modal-preguntas')" title="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="modal-content">
+      <h3>Cuestiones de reflexión filosófica</h3>
+      <ol>
+        <li>¿Es posible una forma de conocimiento que no sea puramente lógica y que, sin embargo, siga siendo rigurosa?</li>
+        <li>¿Qué añade la poesía al pensamiento filosófico? ¿Aporta conocimiento o solo emoción?</li>
+        <li>¿Tiene razón Zambrano al pensar que la filosofía occidental ha dejado fuera dimensiones esenciales de la vida humana?</li>
+        <li>¿Puede la verdad aparecer como revelación y no solo como demostración?</li>
+        <li>¿Qué relación existe entre exilio exterior y exilio interior?</li>
+        <li>¿Los sueños pueden ser una fuente de conocimiento de uno mismo?</li>
+        <li>¿La razón moderna ha sido demasiado instrumental y dominadora?</li>
+        <li>¿Qué diferencias habría entre una razón que domina y una razón que escucha?</li>
+      </ol>
+      <div class="highlight-box"><strong>Sugerencia didáctica:</strong> estas preguntas pueden utilizarse para comentario escrito, exposición oral o debate en clase.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGES -->
+<div class="page-overlay" id="page-ortega">
+  <div class="page-topbar">
+    <div class="page-topbar-left">
+      <button class="btn-back" onclick="closePage('page-ortega')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>Volver</button>
+      <span class="modal-topbar-title">Ortega y Gasset</span>
+    </div>
+  </div>
+  <div class="page-content">
+    <h2>La influencia de Ortega y Gasset</h2>
+    <p>Ortega fue el maestro decisivo de María Zambrano. De él hereda la crítica a la razón abstracta y la convicción de que el pensamiento filosófico debe partir de la vida concreta. La célebre fórmula «yo soy yo y mi circunstancia» resume ese punto de partida: la razón no puede separarse de la existencia real del sujeto.</p>
+    <p>Sin embargo, Zambrano considera que la razón vital todavía no llega hasta el fondo de la experiencia humana. A su juicio, la filosofía occidental sigue dejando en la sombra el alma, el padecimiento, el sueño, el amor y lo divino. Por ello, da un paso más: convierte la razón vital en razón poética.</p>
+    <p>La continuidad entre ambos es clara: ambos rechazan la razón fría y abstracta. Pero la diferencia es decisiva. Ortega quiere una razón encarnada en la vida; Zambrano quiere una razón capaz además de revelar la vida en su profundidad más íntima.</p>
+    <div class="highlight-box"><strong>Fórmula útil:</strong> la razón poética nace de la razón vital, pero la desborda.</div>
+    <h3>Ruptura y fidelidad</h3>
+    <p>La relación entre maestro y discípula no es una simple repetición. Zambrano desarrolla un camino propio, hasta el punto de que su pensamiento comienza a apartarse del horizonte estrictamente orteguiano. Aun así, nunca deja de reconocerse deudora de Ortega.</p>
+    <p>Puede decirse que Zambrano fue fiel a Ortega precisamente atreviéndose a ir más allá de él. No rompe con su maestro, pero sí transforma creativamente su herencia.</p>
+  </div>
+</div>
+
+<div class="page-overlay" id="page-obras">
+  <div class="page-topbar">
+    <div class="page-topbar-left">
+      <button class="btn-back" onclick="closePage('page-obras')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>Volver</button>
+      <span class="modal-topbar-title">Obras principales</span>
+    </div>
+  </div>
+  <div class="page-content">
+    <h2>Las obras donde madura la razón poética</h2>
+    <h3>Hacia un saber sobre el alma</h3>
+    <p>Este conjunto de textos resulta decisivo para entender el nacimiento del pensamiento propio de Zambrano. En él aparece ya la necesidad de ir más allá de una filosofía que solo atiende al concepto y de abrirse a un saber más hondo sobre la interioridad humana.</p>
+    <h3>Pensamiento y poesía en la vida española</h3>
+    <p>Aquí se empieza a perfilar con claridad el diálogo entre filosofía y poesía. Zambrano no las entiende como enemigas, sino como formas distintas y complementarias de relación con la verdad.</p>
+    <h3>Filosofía y poesía</h3>
+    <p>Es una de las obras más importantes para comprender la formulación explícita de la razón poética. En ella se pone de relieve que la filosofía pregunta y separa, mientras que la poesía acoge y revela. La razón poética intenta reunir lo que la historia del pensamiento había escindido.</p>
+    <h3>El hombre y lo divino</h3>
+    <p>En esta obra, la reflexión zambraniana se abre con especial intensidad a la experiencia de lo sagrado. Lo divino no se presenta como una doctrina cerrada, sino como una dimensión de la existencia que comparece en la historia, en el sufrimiento, en el vacío y en la esperanza.</p>
+    <h3>Claros del bosque</h3>
+    <p>Se trata de una de las cumbres de su pensamiento maduro. El “claro” simboliza un espacio de iluminación en medio de la oscuridad, una apertura donde la verdad aparece sin dejar de ser misteriosa. El lenguaje se vuelve aquí especialmente poético y condensado.</p>
+    <div class="quote-box">El pensamiento de Zambrano madura de manera progresiva: desde la crítica de la razón abstracta hasta una metafísica poética de la revelación.<cite>— Lectura sintética de su trayectoria</cite></div>
+  </div>
+</div>
+
+<div class="page-overlay" id="page-aplicaciones">
+  <div class="page-topbar">
+    <div class="page-topbar-left">
+      <button class="btn-back" onclick="closePage('page-aplicaciones')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>Volver</button>
+      <span class="modal-topbar-title">Exilio, sueños y lo divino</span>
+    </div>
+  </div>
+  <div class="page-content">
+    <h2>Tres grandes aplicaciones de la razón poética</h2>
+    <h3>1. El exilio</h3>
+    <p>El exilio, en Zambrano, es a la vez biografía e idea filosófica. Es la experiencia de quedar fuera de la patria, pero también de sentirse arrojado fuera del propio centro. La razón poética surge como respuesta a ese desarraigo: como camino de regreso hacia una verdad interior que no puede encontrarse mediante pura demostración lógica.</p>
+    <p>El exilio obliga a bajar a las entrañas de la existencia. Solo atravesando esa noche puede abrirse el claro de una nueva comprensión.</p>
+    <h3>2. Los sueños</h3>
+    <p>Los sueños ocupan un lugar privilegiado porque revelan dimensiones de la persona que la conciencia diurna tiende a silenciar. Zambrano no los entiende como simple irracionalidad, sino como lenguaje oscuro de la verdad interior.</p>
+    <p>La razón poética escucha ese rumor y trata de descifrarlo. En vez de expulsar el sueño del conocimiento, lo incorpora como vía de acceso a la intimidad del alma.</p>
+    <h3>3. Lo divino</h3>
+    <p>La razón poética está abierta también a lo sagrado. No se trata de imponer una teología dogmática, sino de reconocer que hay dimensiones de la realidad que se manifiestan como trascendencia, llamada, presencia o vacío significativo.</p>
+    <p>En este sentido, Zambrano desarrolla una razón mediadora: una razón que no clausura el misterio, sino que lo hospeda.</p>
+    <div class="highlight-box"><strong>Idea central:</strong> exilio, sueño y lo divino son ámbitos en los que la razón poética muestra que conocer no es solo explicar, sino también acoger y descifrar.</div>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+      const box = modal.querySelector('.modal-box');
+      if (box) box.classList.remove('fullscreen');
+    }
+  }
+
+  function openPage(id) {
+    const page = document.getElementById(id);
+    if (page) {
+      page.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      page.scrollTop = 0;
+    }
+  }
+
+  function closePage(id) {
+    const page = document.getElementById(id);
+    if (page) {
+      page.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function toggleFullscreen(button) {
+    const box = button.closest('.modal-box');
+    if (box) box.classList.toggle('fullscreen');
+  }
+
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        const box = overlay.querySelector('.modal-box');
+        if (box) box.classList.remove('fullscreen');
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.active').forEach(modal => {
+        modal.classList.remove('active');
+        const box = modal.querySelector('.modal-box');
+        if (box) box.classList.remove('fullscreen');
+      });
+      document.querySelectorAll('.page-overlay.active').forEach(page => page.classList.remove('active'));
+      document.body.style.overflow = '';
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
